@@ -19,14 +19,14 @@ The required negative scenario is the **invalid login attempt**. The other three
 | Google Chrome *(optional)* | any recent version | Recommended browser. Cypress also ships with Electron, which works out of the box. |
 | Mozilla Firefox *(optional)* | any recent version | Only needed for `npm run test:firefox` and `npm run test:firefox:headed`. |
 
-Check your versions:
+Check your versions (in CMD):
 
 ```bash
 node -v
 npm -v
 ```
 
-If Node.js is missing or older than 20, install the LTS version from <https://nodejs.org/>, or on Windows:
+If Node.js is missing or older than 20, install the LTS version from <https://nodejs.org/>, or on Windows (PowerShell):
 
 ```bash
 winget install --id OpenJS.NodeJS.LTS -e
@@ -72,8 +72,6 @@ Example:
 npm test
 ```
 
-On Windows you can also double-click `run-tests.cmd`: it checks Node/npm, runs `npm install`, installs and verifies the Cypress binary, runs `npm test`, and saves all output to `run-log.txt`.
-
 Expected result:
 
 ```
@@ -82,7 +80,7 @@ Expected result:
   ✔  All specs passed!  5 tests   5 passing
 ```
 
-On failure, Cypress saves screenshots to `cypress/screenshots/` (git-ignored).
+On failure, Cypress saves screenshots to `cypress/screenshots/` 
 
 ### Running in the interactive runner
 
@@ -164,7 +162,7 @@ The requirements left some gaps. These are the assumptions I made:
 
     ```bash
     npx cypress run --config baseUrl=https://another-env.example.com
-    ```
+    ``` 
 
 ## Troubleshooting
 

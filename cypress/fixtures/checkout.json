@@ -1,0 +1,12 @@
+{
+  "customer": {
+    "firstName": "John",
+    "lastName": "Doe",
+    "postalCode": "10001"
+  },
+  "products": ["Sauce Labs Backpack", "Sauce Labs Bike Light"],
+  "confirmation": {
+    "header": "Thank you for your order!",
+    "text": "Your order has been dispatched, and will arrive just as fast as the pony can get there!"
+  }
+}

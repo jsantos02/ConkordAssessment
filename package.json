@@ -1,0 +1,21 @@
+{
+  "name": "conkord-assessment",
+  "version": "1.0.0",
+  "description": "Cypress end-to-end test automation for the Sauce Demo e-commerce platform",
+  "private": true,
+  "scripts": {
+    "cy:open": "cypress open",
+    "test": "cypress run",
+    "test:chrome": "cypress run --browser chrome",
+    "test:firefox": "cypress run --browser firefox",
+    "test:firefox:headed": "cypress run --browser firefox --headed",
+    "test:checkout": "cypress run --spec cypress/e2e/checkout.cy.js",
+    "test:login": "cypress run --spec cypress/e2e/login.cy.js"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "devDependencies": {
+    "cypress": "^16.2.0"
+  }
+}
